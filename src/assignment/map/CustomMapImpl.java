@@ -67,11 +67,11 @@ public class CustomMapImpl<K,V> implements Serializable{
 	        for (int i = 0; i < size; i++) {
 	                values[i] = null;
 	                size--;
-	                condenseArray(i);
+	                shrinkArray(i);
 	        }
 	    }
 
-	    private void condenseArray(int start) {
+	    private void shrinkArray(int start) {
 	        for (int i = start; i < size; i++) {
 	            values[i] = values[i + 1];
 	        }
