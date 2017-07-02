@@ -63,7 +63,7 @@ public class CustomMapImpl<K,V> implements Serializable{
 	        return size;
 	    }
 
-	    public void remove() {
+	    public void delete() {
 	        for (int i = 0; i < size; i++) {
 	                values[i] = null;
 	                size--;
